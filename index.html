@@ -1,1 +1,45 @@
-Hello World
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>twitch wanna watch</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <nav class="navbar">
+      <div class="navbar__title">Or you want to checkout
+        <div class="navbar__search">
+          <form>
+          <input type="text" class="navbar__search__text" placeholder="full name or try your luck" />
+          <button class="navbar__search__searchBtn">Search</button>
+        </form>
+        </div>
+      </div>
+      <ul class="navbar__topGames">
+        <li class="active "id="popularStreams">Most Popular</li>
+        <li id="Game0"></li>
+        <li id="Game1"></li>
+        <li id="Game2"></li>
+        <li id="Game3"></li>
+        <li id="Game4"></li>
+      </ul>
+  </nav>
+  <div class="display">
+    <div class="wrapper">
+      <h2 class="display__title"></h2>
+      <p class="display__textContent"></p>
+      <div class="display__results">
+
+      </div>
+      <div class="display__moreResultsBtn">load more results</div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
