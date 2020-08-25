@@ -1,0 +1,171 @@
+body {
+  background-image: url("./imgs/display_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.wrapper {
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  background: rgba(128, 72, 250, 1);
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 2;
+  font-size: 20px;
+}
+
+.navbar > .wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__title {
+  display: flex;
+}
+
+.navbar__search {
+  margin-left: 8px;
+}
+
+.navbar__topGames {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+}
+
+.navbar__topGames > li {
+  padding: 50px 10px;
+  font-size: 20px;
+}
+
+.navbar__topGames > li:hover, li.active {
+  color: rgba(101, 101, 101, 1);
+  background: whitesmoke;
+  transition: ease-in .2s;
+  cursor: pointer;
+}
+
+.display {
+  margin-top: 20px;
+  padding-top: 20px;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, .8);
+}
+
+.display__title {
+  color: whitesmoke;
+  margin-top: 110px;
+  text-align: center;
+}
+
+.display__results {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.display__result {
+  height: 350px;
+  width: 440px;
+  background: rgba(50, 50, 50);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 10px 5px;
+  filter: brightness(50%);
+}
+
+.display__result:hover {
+  filter: brightness(1);
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all .4s;
+  z-index: 1;
+}
+
+.display__result__info {
+  display: flex;
+  align-content: center;
+  justify-content: stretch;
+  margin: auto 5px;
+}
+
+.display__result__info__channelImg {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  background-size: contain;
+  background-position: center;
+}
+
+.display__result__info__dicriptions {
+  margin: 0 5px;
+  color: whitesmoke;
+}
+
+.display__result__info__dicriptions__title {
+  line-height: 1.3em;
+  height: 2.5em;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.display__result__info__dicriptions__host {
+  margin-top: 3px;
+}
+
+.display__moreResultsBtn {
+  width: 440px;
+  height: 80px;
+  margin: 8px;
+  background: rgb(59, 97, 207);
+  font-size: 20px;
+  color: white;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display__moreResultsBtn:hover {
+  color: rgb(59, 97, 207);
+  background: white;
+  cursor: pointer;
+  transition: ease-in .3s;
+}
+
+.footer {
+  max-width: 1920px;
+  height: 50px;
+  background: rgba(128, 72, 250, 1)
+}
+
+
+.hide {
+  display: none;
+}
